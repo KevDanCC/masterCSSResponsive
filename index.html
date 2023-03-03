@@ -10,27 +10,58 @@
 </head>
 
 <body>
-    <h1 >Master en CSS WEB </h1>
-    <ul>
+    <h1 id="titulo">Master en CSS WEB </h1>
+    <ul id="menu">
         <li><a href="#">Inicio</a></li>
-        <li><a href="#">Temario</a></li>
+        <li><a href="#">Temario</a>
+        <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">LESS</a></li>
+        </ul>
+        
+        </li>
         <li><a href="#">Reseñas</a></li>
         <li><a href="#">Contacto</a></li>
     </ul>
 
     <div id="descripcion">
         <h2>Descripción del Curso</h2>
-        <p>
+        <p class="parrafo parrafo1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor laborum incidunt aperiam et soluta in!
             Corrupti ab rem voluptate debitis magnam, sequi odio eligendi, aliquam ratione, quo voluptatem distinctio
             quia.
         </p>
-        <p>
+        <p class="parrafo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim illo nostrum dolore quae veniam commodi
+            ab sunt adipisci quos possimus perspiciatis provident voluptate quia, reprehenderit vitae soluta velit
+            animi!
+        </p>
+        <p  class="parrafo3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim illo nostrum dolore quae veniam commodi
             ab sunt adipisci quos possimus perspiciatis provident voluptate quia, reprehenderit vitae soluta velit
             animi!
         </p>
     </div>
+
+
+<div id="usuario">
+    <form action="">
+        <label for="nombre">nombre</label>
+        <input type="text">
+
+        <label for="apellidos">apellidos</label>
+        <input type="text">
+
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+
+
+<div id="saludo">
+<h1>Hola soy Kevin</h1>
+</div>
+
 
     <footer>
         Todos los derechos reservados &copy; <a href="google.com.mx">KCisn</a>
