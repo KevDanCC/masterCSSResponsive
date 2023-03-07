@@ -1,0 +1,49 @@
+*{
+    margin:0px;
+    padding: 0px;
+
+}
+
+
+body{
+padding: 40px;
+
+}
+
+
+.caja {
+    display: block;
+    width: 250px;
+    height: 250px;
+    background-color: aquamarine;
+
+    border: 5px solid red;
+    margin: 15px;
+    margin-top: 80px;
+    margin-bottom: 200px;
+
+    float: left;
+}
+
+#cajas{
+    max-width: 1000px;
+    border: 1px solid black;
+}
+
+
+
+.caja p{
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial;
+    line-height: 230px;
+    padding: 20px;
+    padding-bottom: 80px;
+}
+
+
+.clearFix {
+    float: none;
+    clear: both;
+}
