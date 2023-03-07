@@ -1,0 +1,100 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+
+.generalContainer {
+    /* border: 1px solid red; */
+    margin-top: 40px;
+    margin: auto;
+    width: 1200px;
+}
+
+#header {
+    background-color: blue;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100px;
+    line-height: 70px;
+    text-align: center;
+    width: 100%;
+}
+
+#menu {
+    background-color: #ccc;
+}
+
+#menu h2 {
+    width: 35%;
+    text-align: center;
+}
+
+#menu ul li {
+    display: block;
+    float: left;
+    padding: 20px;
+    border-right: 1px solid black;
+
+    /* display: inline-block; */
+}
+
+#menu ul li:hover {
+    background-color: blue;
+}
+
+
+#menu ul li:hover a {
+    color: white;
+    cursor: pointer;
+}
+
+#infoContainer {
+    width: 68%;
+    /* border: 1px solid red; */
+    float:left
+}
+
+#lateral {
+    width: 30%;
+    border: 1px solid blue;
+    float:left;
+    min-height: 500px;
+    text-align: center;
+}
+
+#infoContainer .cajas .caja{
+    background-color: red;
+    width: 40%;
+    height: 250px;
+    border: 5px solid green;
+    color: white;
+    float: left;
+    margin: 20px;
+    margin-left: 40px;
+}
+
+#infoContainer > h2 {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    color: #444;
+}
+
+#footer {
+    width: 100%;
+    background-color: #eee;
+    text-align: center;
+    color: #444;
+    /* padding: 20px; */
+    height: 55px;
+    line-height: 55px;
+    border-top: 1px solid #ccc;
+}
+
+
+.clearFix {
+    float: none;
+    clear: both;
+}
