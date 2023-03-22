@@ -1,4 +1,4 @@
-#boton{
+#boton {
     display: block;
     padding: 20px;
     background-color: green;
@@ -14,8 +14,58 @@
     transition: border 500ms, background 3s, border-radius 1s
 }
 
-#boton:hover{
+#boton:hover {
     border-radius: 15px;
     background-color: orangered;
     border: 5px solid red;
+}
+
+#caja {
+    width: 250px;
+    height: 250px;
+    background-color: aquamarine;
+    color: white;
+    border: 5px solid black;
+    margin-top: 15px;
+    line-height: 250px;
+    text-align: center;
+
+    animation-name: desplazamiento;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes desplazamiento {
+    /* from {
+        margin-left: 0px;
+    }
+
+    to {
+        margin-left: 120px;
+    } */
+    0% {
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        margin-left: 120px;
+        transform: rotate(360deg);
+        border-radius: 999px;
+    }
+
+    75%{
+background-color: red;
+    }
+
+    77%{
+        border: 3px dashed blue;
+    }
+
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+
+    }
 }
