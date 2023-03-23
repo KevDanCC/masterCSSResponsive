@@ -41,6 +41,10 @@ a {
     color: #0c73f2 !important;
 }
 
+.orange {
+    color: #d69d2a !important;
+}
+
 a:visited {
     color: #529125;
 }
@@ -248,7 +252,7 @@ button:active {
 /* Barra lateral */
 #aside,
 #frase {
-    clear: both;
+    /* clear: both; */
     width: 200px;
     float: left;
     margin: 30px;
@@ -352,7 +356,7 @@ button:active {
     font-weight: normal;
     letter-spacing: 1px;
     text-align: center;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
     /* margin-bottom: 5px; */
@@ -378,8 +382,20 @@ button:active {
 }
 
 
-#sections .date{
+#sections .date {
     color: gray;
     font-size: 14px;
 }
 
+
+#sections .stickerOne,
+#sections .stickerTwo {
+    position: absolute;
+    margin-top: -38px;
+    z-index: 0;
+}
+
+
+#sections .stickerTwo {
+    margin-left: 840px;
+}
