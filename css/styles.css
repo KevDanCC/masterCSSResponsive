@@ -26,6 +26,14 @@ a {
     text-decoration: none;
 }
 
+.red {
+    color: #9b2422 !important;
+}
+
+.blue {
+    color: #0c73f2 !important;
+}
+
 a:visited {
     color: #529125;
 }
@@ -231,7 +239,8 @@ button:active {
 
 
 /* Barra lateral */
-#aside, #frase {
+#aside,
+#frase {
     clear: both;
     width: 200px;
     float: left;
@@ -243,7 +252,7 @@ button:active {
 
 }
 
-#frase{
+#frase {
     width: 180px;
     padding: 10px;
     font-size: 14px;
@@ -280,7 +289,7 @@ button:active {
     text-align: center;
 }
 
-#aside li{
+#aside li {
     margin-top: 8px;
     margin-bottom: 5px;
     margin-left: 20px;
@@ -314,5 +323,3 @@ button:active {
     text-align: center;
 
 }
-
-
