@@ -1,0 +1,30 @@
+/* Fuentes */
+@font-face {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    src: url(../fonts/TrebuchetMS.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(../fonts/BebasNeue.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url(../fonts/websymbols-regular-webfont.eot);
+    src: url('../fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/websymbols-regular-webfont.woff') format('woff'),
+        url('../fonts/TrebuchetMS.ttf') format('truetype'),
+        url('../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilos Generales */
+
+/* Gear class para carga de simbolo */
+.gear {
+    font-family: WebSymbolsRegular;
+}
