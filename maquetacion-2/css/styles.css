@@ -5,12 +5,14 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'BebasNeue';
     src: url(../fonts/BebasNeue.otf);
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'WebSymbolsRegular';
     src: url(../fonts/websymbols-regular-webfont.eot);
@@ -24,7 +26,64 @@
 
 /* Estilos Generales */
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('../img/pattern.png');
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0px auto;
+}
+
 /* Gear class para carga de simbolo */
 .gear {
     font-family: WebSymbolsRegular;
+}
+
+
+/* CABECERA */
+#header {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    font-family: 'BebasNeue';
+    color: white;
+
+}
+
+#logo {
+    float: left;
+    width: 200px;
+    background-color: #37BCF9;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms;
+    margin-top: 8px;
+    margin-left: 20px;
+    /* height: 80px ; */
+}
+
+#logo .gear {
+    display: block;
+    float: left;
+    font-size: 30px;
+    margin-top: 8px;
+    margin-left: 26px;
+}
+
+
+#logo h3 {
+    font-size: 40px;
+    display: block;
+    float: right;
+    margin-top: 5px;
+    transition: all 300ms;
+    margin-right: 65px;
 }
