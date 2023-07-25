@@ -88,7 +88,7 @@ body {
     margin-right: 65px;
 }
 
-#menu{
+#menu {
     float: right;
     height: 70px;
     background-color: transparent;
@@ -102,14 +102,39 @@ body {
     line-height: 70px;
 }
 
-#menu ul li a{
+#menu ul li a {
     color: white;
     display: block;
     text-decoration: none;
     transition: all 200ms;
 }
 
-#menu ul li a:hover{
+#menu ul li a:hover {
     color: #37BCF9;
-    transform: scale(1.2,1.2);
+    transform: scale(1.2, 1.2);
+}
+
+/* BANNER */
+#banner {
+    width: 95.6%;
+    height: 100px;
+    border: 10px solid white;
+    box-shadow: 0px 0px 2px gray;
+    background: url('../img/bakbaner.png');
+    background-position: -200px, -200px;
+    margin: 20px auto;
+}
+
+#banner h1 {
+    display: block;
+    width: 850px;
+    font-family: 'BebasNeue';
+    color: white;
+    font-size: 45px;
+    letter-spacing: 2px;
+    margin: 27px auto;
+    text-align: center;
+    font-weight: normal;
+    text-shadow: 2px 2px 1px black;
+
 }
