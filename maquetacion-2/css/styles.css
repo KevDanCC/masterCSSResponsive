@@ -36,14 +36,15 @@ body {
 }
 
 .wrap {
-    width: 1200px;
+    width: 1250px;
     margin: 0px auto;
 }
 
 /* Gear class para carga de simbolo */
-.gear {
+.gear, .icon {
     font-family: WebSymbolsRegular;
 }
+
 
 
 /* CABECERA */
@@ -116,7 +117,7 @@ body {
 
 /* BANNER */
 #banner {
-    width: 95.6%;
+    width: 95.5%;
     height: 100px;
     border: 10px solid white;
     box-shadow: 0px 0px 2px gray;
@@ -139,3 +140,21 @@ body {
 
 }
 
+
+/* TARJETAS */
+.card{
+    float: left;
+    width: 205px;
+    height: 305px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #ddd;
+    overflow: hidden;
+    margin: 22px ;
+    margin-top: 40px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.card:last-child{
+    margin-right: 0px;
+}
