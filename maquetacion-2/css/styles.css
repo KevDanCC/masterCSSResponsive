@@ -420,7 +420,8 @@ aside h3 {
     font-family: 'TrebuchetMS';
     background-color: white;
     color: black;
-    box-shadow: 1px 1px solid 2px #ddd;
+    box-shadow: 1px 1px  2px #ddd;
+
 
 }
 
@@ -467,4 +468,27 @@ aside h3 {
     text-decoration: none;
     color: #2e75c6;
     outline: none;
+}
+
+#blog{
+    height: 100px;
+    margin-top: 60px;
+    line-height: 100px;
+    text-align: center;
+    font-family: 'BebasNeue';
+    
+}
+
+#blog a{
+    display: block;
+    font-size: 40px;
+    font-family: 'BebasNaue';
+    letter-spacing: 3px;
+    color: #00538C;
+    outline: none;
+    text-decoration: none;
+}
+
+#blog a:hover{
+    text-decoration: underline;
 }
