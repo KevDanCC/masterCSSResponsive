@@ -493,3 +493,46 @@ aside h3 {
 #blog a:hover {
     text-decoration: underline;
 }
+
+
+
+/* FOOTER */
+#footer {
+    width: 100%;
+    height: 470px;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+
+}
+
+#footer .wrap > div{
+    float: left;
+    width: 320px;
+    height: 370px;
+    margin: 40px;
+    text-align: center;
+    color: white;
+    font-family: 'TrebucheMS';
+}
+
+#footer a{
+    text-decoration: none;
+    color: #37BCF9;
+    outline: none;
+    transition: all 300ms;
+}
+
+#footer h5{
+ display: block;   
+ background: url('../img/pxgray.png'), white;
+ height: 50px;
+ letter-spacing: 2px;
+ text-align: center;
+ font-family: 'BebasBeue';
+ font-size: 40px;
+ line-height: 55px;
+ color: black;
+ border-radius: 5px;
+}
+
