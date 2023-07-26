@@ -420,7 +420,7 @@ aside h3 {
     font-family: 'TrebuchetMS';
     background-color: white;
     color: black;
-    box-shadow: 1px 1px  2px #ddd;
+    box-shadow: 1px 1px 2px #ddd;
 
 
 }
@@ -455,31 +455,32 @@ aside h3 {
     border-radius: 0px 0px 0px 5px;
 }
 
-#articles .data  span{
+#articles .data span {
     margin: 5px;
 }
 
-#articles article p{
+#articles article p {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 15px;
 }
-#articles article p a{ 
+
+#articles article p a {
     text-decoration: none;
     color: #2e75c6;
     outline: none;
 }
 
-#blog{
+#blog {
     height: 100px;
     margin-top: 60px;
     line-height: 100px;
     text-align: center;
     font-family: 'BebasNeue';
-    
+
 }
 
-#blog a{
+#blog a {
     display: block;
     font-size: 40px;
     font-family: 'BebasNaue';
@@ -489,6 +490,6 @@ aside h3 {
     text-decoration: none;
 }
 
-#blog a:hover{
+#blog a:hover {
     text-decoration: underline;
 }
