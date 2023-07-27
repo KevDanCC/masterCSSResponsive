@@ -6,9 +6,27 @@
         margin: 0 auto;
     }
 
+    #banner{
+        height: 8%;
+        margin: 2% auto;
+    }
+
+    #banner h1{
+        text-align: center;
+        margin: 3.8% auto;
+    }
+
     .card {
         width: 17%;
         margin: 1.45%;
+    }
+
+    .card p{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+
     }
 
     #articles {
