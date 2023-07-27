@@ -42,6 +42,10 @@
         width: 24%;
     }
 
+    #footer h5 {
+        font-size: 20px;
+    }
+
     #footer #browsers img {
         width: 14%;
     }
@@ -53,7 +57,7 @@
     }
 
     .card .description {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     #articles {
@@ -61,7 +65,11 @@
     }
 
     #footer h5 {
-        font-size: 22px;
+        font-size: 18px;
+    }
+
+    #footer img {
+        max-width: 100%;
     }
 }
 
@@ -73,7 +81,7 @@
 
     #footer .wrap>div {
         width: 26%;
-        margin: 20px;
+        margin: 28px;
     }
 
 
@@ -90,6 +98,12 @@
 
 
 @media (max-width: 925px) {
+
+    .card .description {
+        font-size: 14px;
+    }
+
+    
     #articles {
         width: 65%;
     }
@@ -144,4 +158,34 @@
         display: none;
     }
 
+}
+
+
+@media (max-width: 890px) {
+
+
+
+
+    #lateral h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 790px) {
+    #banner h1 {
+        font-size: 30px;
+    }
+
+    .card {
+        height: auto;
+    }
+
+    .card .category {
+        font-size: 15px;
+        margin-top: -23px;
+    }
+
+    .card .description {
+        display: none;
+    }
 }
