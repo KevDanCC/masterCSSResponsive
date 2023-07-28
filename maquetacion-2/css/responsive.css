@@ -238,3 +238,35 @@
 
 
 }
+
+
+
+
+
+@media (max-width : 667px) {
+
+    #lateral {
+        float: none;
+        width: 100%;
+        margin: 0px auto;
+        min-height: auto;
+        margin-top: 50px;
+    }
+
+    #lateral input[type="text"] {
+        width: 91%;
+    }
+    #login input[type="email"], #login input[type="password"] {
+        width: 90%;
+    }
+
+    #articles {
+        float: none;
+        width: 100%;
+        margin: 0px auto;
+        min-height: auto;
+
+    }
+
+
+}
