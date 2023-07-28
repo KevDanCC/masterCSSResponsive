@@ -40,6 +40,7 @@
 
     #footer .wrap>div {
         width: 24%;
+        height: auto;
     }
 
     #footer h5 {
@@ -256,7 +257,9 @@
     #lateral input[type="text"] {
         width: 91%;
     }
-    #login input[type="email"], #login input[type="password"] {
+
+    #login input[type="email"],
+    #login input[type="password"] {
         width: 90%;
     }
 
@@ -266,6 +269,26 @@
         margin: 0px auto;
         min-height: auto;
 
+    }
+
+    #footer {
+        height: auto;
+    }
+
+
+    #footer .wrap>div {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+
+
+    #footer h5 {
+        font-size: 22px;
+    }
+
+    #info p{
+        margin-bottom: 30px;
     }
 
 
