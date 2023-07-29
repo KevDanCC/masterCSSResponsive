@@ -246,6 +246,13 @@
 
 @media (max-width : 667px) {
 
+
+    .card {
+        width: 16%;
+        margin: 8px;
+    }
+    
+
     #lateral {
         float: none;
         width: 100%;
@@ -271,6 +278,10 @@
 
     }
 
+    #articles article {
+        width: 92%;
+    }
+
     #footer {
         height: auto;
     }
@@ -287,9 +298,114 @@
         font-size: 22px;
     }
 
-    #info p{
+    #info p {
         margin-bottom: 30px;
     }
 
 
+}
+
+
+@media (max-width: 475px) {
+
+    #header {
+        width: 100%;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 3%;
+    }
+
+
+    #menu {
+        clear: both;
+        width: 100%;
+        float: none;
+        margin: 0px auto;
+    }
+
+    #menu ul {
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    #menu ul li {
+        width: 100%;
+        margin: 0px auto;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
+    #banner {
+        height: 50px;
+    }
+
+    #banner h1 {
+        font-size: 18px;
+    }
+
+
+
+    #latera {
+        float: none;
+        width: 100%;
+        margin: 0px auto;
+        min-height: auto;
+        margin-top: 20px;
+    }
+
+    #lateral input[type="text"] {
+        width: 87%;
+    }
+
+
+    #cards{
+        margin-top: 20px;
+    }
+    .card {
+        height: 65px;
+        width: 60%;
+        margin-left: 21%;
+    }
+
+    .card .icon {
+        height: 60px;
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    .card .icon h2{
+        font-size: 10px;
+    }
+
+
+    .card:hover .icon {
+        font-size: 30px;
+    }
+
+    .card .category {
+        margin-top: -20px;
+        font-size: 15px;
+    }
+
+    #articles .data {
+        float: none;
+        margin: -10px;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    #articles article h4 {
+        margin-top: 20px;
+    }
+}
+
+
+
+@media (max-width: 340px){
+
+    #lateral input[type="text"] {
+        width: 83%;
+    }
+    #login input[type="email"], #login input[type="password"] {
+        width: 80%;
+    }
 }
