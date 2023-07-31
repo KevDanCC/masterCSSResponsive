@@ -52,7 +52,7 @@ p {
 
 // Mixins-Funciones
 //Puede ser, funcion sola o recibir parametros
-    //@mixin crearBorder () {
+//@mixin crearBorder () {
 @mixin crearBorder ($color, $size, $shadow) {
     border: $size solid $color;
     border-radius: $size;
@@ -67,5 +67,36 @@ p {
 }
 
 .listado {
-    @include crearBorder(green, 5px, yellow )
+    @include crearBorder(green, 5px, yellow)
+}
+
+
+
+
+
+// Herencia
+%alert-normal {
+    border: 1px solid gray;
+    background-color: #ccc;
+    color: rgba(231, 48, 11, 0.402);
+    padding: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.alert {
+    @extend %alert-normal;
+}
+
+.alert-warning {
+    // Herencia, y sobre escritura
+    @extend %alert-normal;
+    color: blue;
+    border-color: blue;
+}
+
+.alert-sucess {
+    @extend %alert-normal;
+    color: aqua;
+    border-color: aqua;
 }

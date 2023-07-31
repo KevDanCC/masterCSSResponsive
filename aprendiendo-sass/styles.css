@@ -45,6 +45,25 @@ p {
   box-shadow: 0px 0px 5px yellow;
 }
 
+.alert-sucess, .alert-warning, .alert {
+  border: 1px solid gray;
+  background-color: #ccc;
+  color: rgba(231, 48, 11, 0.402);
+  padding: 10px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.alert-warning {
+  color: blue;
+  border-color: blue;
+}
+
+.alert-sucess {
+  color: aqua;
+  border-color: aqua;
+}
+
 h1 {
   text-decoration: underline;
 }
