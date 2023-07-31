@@ -125,3 +125,42 @@ h1 {
     width: $caja / $wrap * 100%;
     margin: 10px;
 }
+
+
+
+
+
+// Condicionales
+$color-fondo: red;
+
+//IF
+h1 {
+    @if $color-fondo ==#ccc {
+        color: black;
+
+    }
+
+    @else if $color-fondo ==black {
+        color: lightsalmon;
+    }
+
+    @else {
+        color: pink;
+    }
+}
+
+
+//Bucles
+// FOR
+$contador: 1;
+
+@for $contador from 1 through 10 {
+    .listado ul li:nth-child(#{$contador}) {
+        font-size: $contador * 2px;
+
+    }
+}
+
+// EACH
+
+// WHILE
