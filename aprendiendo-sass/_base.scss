@@ -100,3 +100,28 @@ p {
     color: aqua;
     border-color: aqua;
 }
+
+
+// Operadores matematicos para calculos
+
+$caja: 200px;
+$wrap: 900px;
+
+h1 {
+    font-size: 20px + 5px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.cajas {
+    width: $wrap;
+    margin: 0px auto;
+}
+
+.caja {
+    float: left;
+    width: $caja / $wrap * 100%;
+    margin: 10px;
+}
