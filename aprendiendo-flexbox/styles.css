@@ -10,6 +10,15 @@ body {
     /* Se adapta al contenido de los elementos */
     /* display: inline-flex;  */
 
+
+
+    /* DIRECCION DE ORDENAMIENTO POR FLEX */
+    flex-direction: row;   /*por default*/
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+
+
     width: auto;
 
     border: 3px solid black;
