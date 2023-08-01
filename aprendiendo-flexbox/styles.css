@@ -36,6 +36,10 @@ body {
 
     border: 3px solid black;
     padding: 5px;
+
+
+    /* Organizar el contenido horizontalmente en flex> al centro, espaciado, derecha, izquierda, etc */
+    justify-content: space-around;
 }
 
 .caja {
@@ -59,7 +63,7 @@ body {
 
     -68px usado por el margen, para que el ultimo elemento quede solo
     */
-    flex-basis: calc((100% / 3) - 68px);
+    /* flex-basis: calc((100% / 3) - 68px); */
 
 
 }
@@ -102,6 +106,6 @@ body {
 
 
     /* dice que esta clase, use un 100% de tamaño */
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
 
 }
