@@ -4,8 +4,8 @@ body {
 }
 
 #layout {
-/* Se adapta con FLEX al ancho total de la pantalla */
-    display: flex; 
+    /* Se adapta con FLEX al ancho total de la pantalla */
+    display: flex;
 
     /* Se adapta al contenido de los elementos */
     /* display: inline-flex;  */
@@ -13,10 +13,19 @@ body {
 
 
     /* DIRECCION DE ORDENAMIENTO POR FLEX */
-    flex-direction: row;   /*por default*/
+    flex-direction: row;  /*por default*/
     /* flex-direction: column; */
     /* flex-direction: column-reverse; */
     /* flex-direction: row-reverse; */
+
+
+    /* Permite indicar si se desea delimitar el tamaño o no */
+    flex-wrap: wrap;
+
+
+    /* Es el equivalente al uso en 1 linea de Flex Direction y de Flex Wrap */
+    /* flex-flow:row wrap; */
+
 
 
     width: auto;
