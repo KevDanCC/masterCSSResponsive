@@ -1,4 +1,8 @@
+
+
 body {
+    /* Ingresando variable al scope de body y poder ser utilizado */
+    --rojo:red;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
@@ -47,7 +51,17 @@ body {
     /* Los elementos se ajustan a razon de ocupar todo el ancho segun la distribucion
     (se expande a completar tamanos)
     */
-    flex-grow: 1;
+    /* flex-grow: 1; */
+
+
+    /* Sirve para establecer el tamaño en forma Flex de los elementos
+    como si fuera un width.
+
+    -68px usado por el margen, para que el ultimo elemento quede solo
+    */
+    flex-basis: calc((100% / 3) - 68px);
+
+
 }
 
 .red {
@@ -55,13 +69,19 @@ body {
     se indica el tamano dado del elemento en particular
     parecido en como interactua flex:4 pero en forma grow
     */
-    flex-grow: 5;
-    background-color: red;
+    /* flex-grow: 5; */
+    /* background-color: red; */
+
+    /* Usando variable ingresada en Body */
+    background-color: var(--rojo);
+
 
 }
 
 .green {
     background-color: green;
+
+
 
 
 }
@@ -77,7 +97,11 @@ body {
 }
 
 .orange {
-    flex-grow: 5;
+    /* flex-grow: 5; */
     background-color: orange;
+
+
+    /* dice que esta clase, use un 100% de tamaño */
+    flex-basis: 100%;
 
 }
