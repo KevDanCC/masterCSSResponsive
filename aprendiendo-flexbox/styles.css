@@ -43,34 +43,37 @@ body {
     border: 4px solid #222;
     margin: 10px;
     background-color: grey;
+
+    /* Los elementos se ajustan a razon de ocupar todo el ancho segun la distribucion
+    (se expande a completar tamanos)
+    */
+    flex-grow: 1;
 }
 
 .red {
+    /* Cuando se establece un flex-grow de manera individual
+    se indica el tamano dado del elemento en particular
+    parecido en como interactua flex:4 pero en forma grow
+    */
+    flex-grow: 5;
     background-color: red;
 
-    /* Permite modificar el orden de los elementos, solo indicando quien seria 
-    el primero, 2do, etc..
-    Si solo 1 elemento quieres posiconar al incio, usa -1
-    */
-    order: 3;
 }
 
 .green {
     background-color: green;
 
-    order: 1;
 
 }
 
 .blue {
     background-color: blue;
 
-    order: 2;
 
 }
 
 .orange {
+    flex-grow: 5;
     background-color: orange;
 
-    order: 4;
 }
