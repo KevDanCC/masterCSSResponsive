@@ -48,19 +48,29 @@ body {
 .red {
     background-color: red;
 
+    /* Permite modificar el orden de los elementos, solo indicando quien seria 
+    el primero, 2do, etc..
+    Si solo 1 elemento quieres posiconar al incio, usa -1
+    */
+    order: 3;
 }
 
 .green {
     background-color: green;
+
+    order: 1;
 
 }
 
 .blue {
     background-color: blue;
 
+    order: 2;
+
 }
 
 .orange {
     background-color: orange;
 
+    order: 4;
 }
