@@ -4,6 +4,14 @@ body {
 }
 
 #layout {
+/* Se adapta con FLEX al ancho total de la pantalla */
+    display: flex; 
+
+    /* Se adapta al contenido de los elementos */
+    /* display: inline-flex;  */
+
+    width: auto;
+
     border: 3px solid black;
     padding: 5px;
 }
