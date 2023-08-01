@@ -28,13 +28,47 @@ h1 {
 
 
 // Mixins o Funciones
-.sombras(@size){
-box-shadow: 0px 0px @size black;
-text-shadow: 0px 0px @size red;
+.sombras(@size) {
+    box-shadow: 0px 0px @size black;
+    text-shadow: 0px 0px @size red;
 }
 
 
-.informacion{
+.informacion {
     .sombras(50px)
 }
 
+
+
+// Operadores
+h1 {
+    font-size: 30px + 7px;
+}
+
+
+
+// Mixins condicionales
+.textNegro (@value) when (@value=negro) {
+    color: black;
+}
+
+
+h1 {
+    color: blue;
+
+    .textNegro(rojo)
+}
+
+
+
+// Bucles
+.loop(@cont) when (@cont > 0) {
+    .loop((@cont - 1));
+    height: (900px /  @cont);
+
+}
+
+.informacion{
+    height: 900px;
+    .loop(5)
+}
