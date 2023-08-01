@@ -40,6 +40,12 @@ body {
 
     /* Organizar el contenido horizontalmente en flex> al centro, espaciado, derecha, izquierda, etc */
     justify-content: space-around;
+
+
+
+    height: 600px;
+    /* Alineado vertical en Flex> centrado, al final, al inicio, etc */
+    align-items: flex-start;
 }
 
 .caja {
@@ -80,15 +86,17 @@ body {
     background-color: var(--rojo);
 
 
+    /* Alineado vertical individual Flex */
+    align-self: flex-start;
+
 }
 
 .green {
     background-color: green;
-
-
-
-
-}
+    
+    
+        align-self: center;
+    }
 
 .blue {
     /* flex-grow: 0; */
@@ -96,6 +104,9 @@ body {
     /* Flex Shrink es lo contrario a grow, indica el encogimiento de un elemento  */
     /* flex-shrink: 3; */
     background-color: blue;
+
+
+    align-self: center;
 
 
 }
@@ -107,5 +118,7 @@ body {
 
     /* dice que esta clase, use un 100% de tamaño */
     /* flex-basis: 100%; */
+
+    align-self: flex-end;
 
 }
