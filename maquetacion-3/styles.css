@@ -86,3 +86,52 @@
     background-color: #ccc;
     color: white;
 }
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+#projects {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    flex-basis: 70%;
+}
+
+.project {
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    flex-basis: 250px;
+    /* Se agrega  el grow, para establecer que podra crecer
+    y junto con img, la imagen se ira ajustando al 100%
+    */
+    flex-grow: 1;
+    margin-right: 48px;
+}
+
+.project img{
+    width: 100%;
+}
+
+.project-info{
+    padding: 10px;
+}
+
+.project-info a{
+    font-size: 16px;
+    color: black;
+    transition: all 30mms;
+}
+
+.project-info a:hover{
+    color: green;
+}
+
+.project-info p{
+    font-size: 16px;
+    color: gray;
+}
