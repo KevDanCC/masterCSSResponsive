@@ -12,8 +12,11 @@ body {
     /* Definir contenedor GRID */
     display: grid;
 
-    /* Se establecen 2 columnas, menos el tamaño del GAP */
-    grid-template-columns: 50% 45%;
+    /* Se establecen 4 columnas, menos el tamaño del GAP */
+    /* grid-template-columns: repeat(2, calc(25% - 10px)) 15% 35%; */
+
+    /* Uso de fracciones, el calculo se hace autmaticamente del espacio igual */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
     /* Tamaño del grid, espaciado */
     gap: 10px;
