@@ -5,6 +5,7 @@ body {
 .layout {
 
     width: 1200px;
+    height: 400px;
     margin: 0px auto;
 
     border: 3px solid orangered;
@@ -12,16 +13,18 @@ body {
     /* Definir contenedor GRID */
     display: grid;
 
-    /* Se establecen 4 columnas, menos el tamaño del GAP */
-    /* grid-template-columns: repeat(2, calc(25% - 10px)) 15% 35%; */
 
-    /* Uso de fracciones, el calculo se hace autmaticamente del espacio igual */
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* Establece el tamaño de la columna, en este caso con repeat para no poner 2 veces fr - FRACCIONES- */
+    grid-template-columns: repeat(2, 1fr);
+
+    /* Para establecer los tamaños de los Rows, admite %, Fracciones (fr), pixeles*/
+    grid-template-rows: 0.5fr 3fr 15%;
+
 
     /* Tamaño del grid, espaciado */
     gap: 10px;
 
-    padding: 10px ;
+    padding: 10px;
 
 }
 
@@ -50,4 +53,11 @@ body {
 
 .layout .blue {
     background-color: blue;
+}
+.layout .orange {
+    background-color: orange;
+}
+
+.layout .lightblue {
+    background-color: lightblue;
 }
