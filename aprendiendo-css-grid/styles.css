@@ -5,7 +5,7 @@ body {
 .layout {
 
     width: 1200px;
-    height: 400px;
+    min-height: 400px;
     margin: 0px auto;
 
     border: 3px solid orangered;
@@ -15,7 +15,7 @@ body {
 
 
     /* Establece el tamaño de la columna, en este caso con repeat para no poner 2 veces fr - FRACCIONES- */
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     /* Para establecer los tamaños de los Rows, admite %, Fracciones (fr), pixeles*/
     grid-template-rows: 0.5fr 3fr 15%;
@@ -41,6 +41,10 @@ body {
 .layout .red {
     background-color: red;
 
+    /* De esta menera se puede expandir las columas, estableciendo que parte de la columa 1, a la 4 > con base al GRID del navegador */
+    grid-column-start: 1;
+    grid-column-end: 4;
+
 }
 
 .layout .blue {
@@ -53,11 +57,26 @@ body {
 
 .layout .blue {
     background-color: blue;
+    grid-column: 2 / 4;
+
 }
+
+.layout .pink {
+    background-color: pink;
+
+    grid-column: 1 / 3;
+}
+
 .layout .orange {
     background-color: orange;
 }
 
 .layout .lightblue {
     background-color: lightblue;
+
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+
+    /* Esta es otra forma de expandir las columnas, ingresando que parte de la columa 1 / a la 4 , con base al Grid del Navegador*/
+    grid-column: 1 / 4;
 }
