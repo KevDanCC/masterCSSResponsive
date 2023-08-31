@@ -2,6 +2,67 @@ body {
     text-align: center;
 }
 
+
+
+#webSite {
+    width: 75%;
+    height: 100vh;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+}
+
+#cabecera{
+    background-color: blue;
+    color: white;
+}
+
+#menu{
+    background-color: lightblue;
+    color: black;
+}
+
+#contenido{
+    background-color: #eee;
+}
+
+#contenido  article{
+    background-color: #ccc;
+    border: 1px solid #555;
+}
+
+#lateral {
+    background-color: orange;
+    color: white;
+}
+
+#pie-pagina{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EJEMPLOS */
+
 .layout {
 
     width: 80%;
