@@ -2,7 +2,10 @@ body {
     text-align: center;
 }
 
-
+#webSite *{
+    margin: 0px;
+    padding: 0px;
+}
 
 #webSite {
 
@@ -34,8 +37,23 @@ body {
     color: black;
 }
 
+#menu ul{
+    /* Se muestra, que dentro de un elemento GRID se puede establecer nuevamente GRID
+    Como en este caso, el UL se organiza como grid, con 9 columnas
+    */
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
 #contenido{
     grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    padding: 20px;
     background-color: #eee;
 }
 
