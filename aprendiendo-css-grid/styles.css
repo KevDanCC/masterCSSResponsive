@@ -5,23 +5,37 @@ body {
 
 
 #webSite {
+
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    /* Se agregan diferentes tamanios a nivel fila */
+    grid-template-rows: 200px  70px  1fr  70px; 
+
     width: 75%;
-    height: 100vh;
+    height: 1000px;
     margin: 0px auto;
     border: 1px solid #ccc;
 }
 
 #cabecera{
+    /* Se ajustan el fit a nivel columna para determinar los espacios a utilizar
+    RECORDAR que se tienen 
+    5 columnas de 1fr
+    4 filas de 4 tamanios diferentes
+    */
+    grid-column: 1 / 6;
     background-color: blue;
     color: white;
 }
 
 #menu{
+    grid-column: 1 / 6;
     background-color: lightblue;
     color: black;
 }
 
 #contenido{
+    grid-column: 1 / 5;
     background-color: #eee;
 }
 
@@ -31,11 +45,13 @@ body {
 }
 
 #lateral {
+    grid-column: 5 / 6;
     background-color: orange;
     color: white;
 }
 
 #pie-pagina{
+    grid-column: 1 / 6;
     background-color: black;
     color: white;
 }
