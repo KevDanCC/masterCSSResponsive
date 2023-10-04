@@ -2,11 +2,138 @@ body {
     text-align: center;
 }
 
+
+
+
+/* EJERCICIO COMPLETO CON AREAS */
+#webSite-areas *{
+    margin: 0px;
+    padding: 0px;
+}
+#webSite-areas {
+
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    /* Se agregan diferentes tamanios a nivel fila */
+    grid-template-rows: 200px  70px  1fr  70px; 
+
+
+    /* Se muestra el uso de grid areas, que de forma textual se ingresa
+    los nombres de los elementos, de acuerdo a las respectivas columnas a utilizar.
+    De esta manera, solo se asocian los nombres y listo.
+    
+    */
+    grid-template-areas: 
+    "lateral cabecera cabecera cabecera cabecera"
+    "lateral menu menu menu menu"
+    "lateral contenido contenido contenido contenido"
+    "lateral pie pie pie pie";
+
+    width: 75%;
+    height: 1000px;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+}
+
+#webSite-areas #cabecera{
+    /* Se ajustan el fit a nivel columna para determinar los espacios a utilizar
+    RECORDAR que se tienen 
+    5 columnas de 1fr
+    4 filas de 4 tamanios diferentes
+    */
+    background-color: blue;
+    color: white;
+
+
+    /* como centrar contenido TITULO DE LA WEB horizontal y verticalmente usando GRID
+    de lo contrario seria >>
+
+    display: flex
+    justify-content:center,
+    align-items:center
+    
+    */
+    display: grid;
+    place-items: center;
+
+    /* Nombre del grid area a asociar */
+    grid-area: cabecera;
+
+
+}
+
+#webSite-areas #menu{
+    background-color: lightblue;
+    color: black;
+
+        /* Nombre del grid area a asociar */
+    grid-area: menu;
+}
+
+#webSite-areas #menu ul{
+    /* Se muestra, que dentro de un elemento GRID se puede establecer nuevamente GRID
+    Como en este caso, el UL se organiza como grid, con 9 columnas
+    */
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+    /* Para centrar el menu, ya que es creado con un height de 70px > webSites row */
+    line-height: 70px;
+}
+
+#webSite-areas #contenido{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    padding: 20px;
+    background-color: #eee;
+
+
+        /* Nombre del grid area a asociar */
+    grid-area: contenido;
+}
+
+#webSite-areas #contenido  article{
+    background-color: #ccc;
+    border: 1px solid #555;
+}
+
+#webSite-areas #lateral {
+    background-color: orange;
+    color: white;
+
+        /* Nombre del grid area a asociar */
+    grid-area: lateral;
+}
+
+#webSite-areas #pie-pagina{
+    background-color: black;
+    color: white;
+
+        /* Nombre del grid area a asociar */
+    grid-area: pie;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EJERCICIO COMPLETO */
 #webSite *{
     margin: 0px;
     padding: 0px;
 }
-
 #webSite {
 
     display: grid;
@@ -21,7 +148,7 @@ body {
     border: 1px solid #ccc;
 }
 
-#cabecera{
+#webSite #cabecera{
     /* Se ajustan el fit a nivel columna para determinar los espacios a utilizar
     RECORDAR que se tienen 
     5 columnas de 1fr
@@ -46,13 +173,13 @@ body {
 
 }
 
-#menu{
+#webSite #menu{
     grid-column: 1 / 6;
     background-color: lightblue;
     color: black;
 }
 
-#menu ul{
+#webSite #menu ul{
     /* Se muestra, que dentro de un elemento GRID se puede establecer nuevamente GRID
     Como en este caso, el UL se organiza como grid, con 9 columnas
     */
@@ -61,9 +188,12 @@ body {
     list-style: none;
     margin: 0px;
     padding: 0px;
+
+    /* Para centrar el menu, ya que es creado con un height de 70px > webSites row */
+    line-height: 70px;
 }
 
-#contenido{
+#webSite #contenido{
     grid-column: 1 / 5;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -72,18 +202,18 @@ body {
     background-color: #eee;
 }
 
-#contenido  article{
+#webSite #contenido  article{
     background-color: #ccc;
     border: 1px solid #555;
 }
 
-#lateral {
+#webSite #lateral {
     grid-column: 5 / 6;
     background-color: orange;
     color: white;
 }
 
-#pie-pagina{
+#webSite #pie-pagina{
     grid-column: 1 / 6;
     background-color: black;
     color: white;
