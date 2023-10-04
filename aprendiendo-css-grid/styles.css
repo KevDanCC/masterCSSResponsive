@@ -14,6 +14,7 @@ body {
     /* Se agregan diferentes tamanios a nivel fila */
     grid-template-rows: 200px  70px  1fr  70px; 
 
+
     width: 75%;
     height: 1000px;
     margin: 0px auto;
@@ -29,6 +30,20 @@ body {
     grid-column: 1 / 6;
     background-color: blue;
     color: white;
+
+
+    /* como centrar contenido TITULO DE LA WEB horizontal y verticalmente usando GRID
+    de lo contrario seria >>
+
+    display: flex
+    justify-content:center,
+    align-items:center
+    
+    */
+    display: grid;
+    place-items: center;
+
+
 }
 
 #menu{
