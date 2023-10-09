@@ -64,7 +64,7 @@
 
 #menu>ul {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -97,7 +97,7 @@
 
 }
 
-#projects{
+#projects {
     display: grid;
     grid-template-columns: repeat(auto-fill, 250px);
     gap: 3rem;
@@ -199,4 +199,109 @@
 #footer .info {
     margin-left: 20px;
     color: #444;
+}
+
+
+@media (max-width: 1253px) {
+
+    #header {
+
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 140px;
+        padding-bottom: 20px;
+    }
+
+    #header h1 {
+        text-align: center;
+    }
+
+    #aside {
+        margin-right: 0px;
+    }
+}
+
+
+@media (max-width: 830px) {
+    #content {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: start;
+        justify-content: space-between;
+
+        /* padding-top: 20px; */
+        /* padding-bottom: 20px; */
+        /* column-gap: 3.3rem; */
+
+    }
+
+    #projects {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        /* background-color: black; */
+        /* margin: 40px; */
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+
+    .project {
+        /* background-color: red; */
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    #aside ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+    #footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        text-align: center;
+        justify-content: start;
+    }
+
+    #footer .logo {
+        text-align: center;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    #header{
+        height: 15rem;
+    }
+
+    #header .logo,
+    #header h1,
+    #footer .logo,
+    #footer .info
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+    #content{
+        margin-top: 1rem;
+    }
+
+    #menu ul{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    #aside ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px;
+        /* gap: 1rem; */
+    }
+
+    
 }
