@@ -21,7 +21,10 @@
                 <h1>Aprendiendo Bootstrap</h1>
             </header>
 
-            <nav id="menu" class="col-12 bg-secondary text-white">
+            <!-- Para ocultar desde bootstrap es a partir de d-block.  -->
+            <!-- Si quieres ocultar desde XS basta con establecer el default : d-none. -->
+            <!-- De ahi, solo indicar a partir de quien mostrar el elemento, aqui seria d-md-block. -->
+            <nav id="menu" class="col-12 bg-secondary text-white d-none d-md-block">
                 <ul class="row ">
                     <!-- Es posible aplicar ajustes de acuerdo a las resoluciones dadas. -->
                     <!-- https://getbootstrap.com/docs/4.0/layout/grid/ -->
@@ -38,7 +41,10 @@
 
             <section id="content " class="col-12 border">
                 <div class="row">
-                    <section id="products " class="col-9 border border-danger">
+                    <!-- Una vez ocultando, puedes ampliar elementos ya que tendrias huecos, aqui por ejemplo -->
+                    <!-- en default, se establece un col-xs-12 para que desde extra small se vaya a 12 grid. -->
+                    <!-- Debido a que arriba ocultaste, y ya a partir de md establecer 9 grid por el espacio -->
+                    <section id="products " class="col-xs-12 col-md-9 border border-danger">
                         <h2>Productos</h2>
                         <hr>
                         <div class="items">
@@ -100,7 +106,7 @@
 
                         </div>
                     </section>
-                    <aside class="col-3 border border-danger">
+                    <aside class="col-3 border border-danger d-none d-md-block">
                         <h2>Barra lateral</h2>
                         <!-- El uso de align-items- permite alineacion vertical -->
                         <div class="lateral row bg-danger align-items-end">
