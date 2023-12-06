@@ -23,11 +23,16 @@
 
             <nav id="menu" class="col-12 bg-secondary text-white">
                 <ul class="row ">
-                    <li class="col">Inicio</li>
-                    <li class="col">Pagina 1</li>
-                    <li class="col">Pagina 2</li>
-                    <li class="col">Pagina 3</li>
-                    <li class="col">Contacto</li>
+                    <!-- Es posible aplicar ajustes de acuerdo a las resoluciones dadas. -->
+                    <!-- https://getbootstrap.com/docs/4.0/layout/grid/ -->
+                    <!-- Es decir, aplicar ciertos tamaños de acuerdo a los tamaños de las pantallas -->
+                    <!-- tales como lg, md, sm, xs, etc -->
+
+                    <li class="col-xs-12 col-sm-12 col-md">Inicio</li>
+                    <li class="col-xs-12 col-sm-12 col-md">Pagina 1</li>
+                    <li class="col-xs-12 col-sm-12 col-md">Pagina 2</li>
+                    <li class="col-xs-12 col-sm-12 col-md">Pagina 3</li>
+                    <li class="col-xs-12 col-sm-12 col-md">Contacto</li>
                 </ul>
             </nav>
 
@@ -39,13 +44,13 @@
                         <div class="items">
                             <!-- Englobando en row individuales, y manteniendo el COL  a secas, se permite ajuste automatico -->
                             <div class="row">
-                                <div class="item col m-2 bg-primary">
+                                <div class="item col  col-lg col-md-12  col-sm-12  bg-primary">
                                     Producto
                                 </div>
-                                <div class="item col m-2 bg-warning">
+                                <div class="item col  col-lg col-md-6  col-sm-6  bg-warning">
                                     Producto
                                 </div>
-                                <div class="item col m-2 bg-danger">
+                                <div class="item col  col-lg col-md-6   col-sm-6 bg-danger">
                                     Producto
                                 </div>
                             </div>
