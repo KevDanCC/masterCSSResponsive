@@ -184,8 +184,8 @@
                         }, 1000)
                     </script>
 
-                    <button type="button" class="btn btn-danger mt-3" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        title="Si das clic sera una alerta">
+                    <button type="button" class="btn btn-danger mt-3" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" title="Si das clic sera una alerta">
                         Alerta
                     </button>
                     <button type="button" class="btn btn-danger mt-3" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -200,6 +200,11 @@
                         title="Si das clic sera una alerta">
                         Alerta 4
                     </button>
+
+                    <button type="button" class="btn btn-lg btn-success mt-3" data-bs-toggle="popover" title="Popover title"
+                        data-bs-content="And here's some amazing content. It's very engaging. Right?">
+                        Esto es un Popover</button>
+
 
 
                     <!-- Migas de pan, que es como la ruta de la cual desciende la pagina actual, para retroceder route path -->
@@ -333,9 +338,16 @@
         })
     })
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+    // Se agrega para funcionamiento de popover
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
+
 </script>
 
 
