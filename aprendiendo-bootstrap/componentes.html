@@ -201,10 +201,56 @@
                         Alerta 4
                     </button>
 
-                    <button type="button" class="btn btn-lg btn-success mt-3" data-bs-toggle="popover" title="Popover title"
+                    <button type="button" class="btn btn-lg btn-success mt-3" data-bs-toggle="popover"
+                        title="Popover title"
                         data-bs-content="And here's some amazing content. It's very engaging. Right?">
                         Esto es un Popover</button>
 
+                    <hr>
+
+                    <h3>Formulario</h3>
+                    <!-- Uso de Formularios con Bootstrap -->
+                    <form action="">
+                        <!-- Se puede agruparn en conjunto como este -->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-preprend ">
+                                    <span class="input-group-text rounded-0">Prueba</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Ingresa Prueba">
+                            </div>
+                        </div>
+
+                        <!-- O de manera separada con salto de linea -->
+                        <div class="form-group">
+                            <label for="">Nombre</label>
+                            <input type="text" class="form-control" placeholder="Ingresa Nombre">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Genero</label>
+                            <select name="" id="" class="form-control">
+                                <option value="Hombre">Hombre</option>
+                                <option value="Mujer">Mujer</option>
+                            </select>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input type="text" class="form-control" placeholder="Ingresa Email">
+
+                        </div>
+                        <div class="form-group">
+
+                            <label for="">Pass</label>
+                            <input type="password" class="form-control" placeholder="Ingresa password">
+                        </div>
+
+
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                    </form>
+
+                    <hr>
 
 
                     <!-- Migas de pan, que es como la ruta de la cual desciende la pagina actual, para retroceder route path -->
