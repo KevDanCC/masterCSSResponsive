@@ -150,6 +150,21 @@
                             </div>
                         </div>
                     </div>
+                    <!-- COLLAPSE -->
+                    <!-- Muestra del funcionamiento Collpase -->
+                    <a href="#informacion" role="button" class="btn btn-success" data-bs-toggle="collapse" aria-expanded="false" aria-controls="informacion"> 
+                        Mostrar
+                        Info</a>
+
+                    <div class="collapse" id="informacion">
+                        <div class="card card-body">
+                            Esta es la info oculta
+                        </div>
+                    </div>
+
+
+
+
                     <!-- Migas de pan, que es como la ruta de la cual desciende la pagina actual, para retroceder route path -->
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
@@ -194,6 +209,7 @@
             </p>
 
             <hr>
+
 
             <!-- Se estructura una tarjeta, con imagen y texto correspondientes a clases de tarjeta -->
             <div class="row col-md-8 mx-auto">
@@ -259,8 +275,18 @@
 </body>
 
 <script type="text/javascript" src="jquery/jquery-3.7.1.min.js"></script>
-<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<!-- Se comenta el min.js y se habilta el popper -->
+<!-- <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script> -->
 <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+
+<script type="module">
+    import { Toast } from 'bootstrap.esm.min.js'
+  
+    Array.from(document.querySelectorAll('.toast'))
+      .forEach(toastNode => new Toast(toastNode))
+  </script>
+
 <!-- Manejo de tiempos al  Slider con imagenes -->
 
 <script>
