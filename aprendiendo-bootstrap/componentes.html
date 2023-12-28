@@ -152,7 +152,8 @@
                     </div>
                     <!-- COLLAPSE -->
                     <!-- Muestra del funcionamiento Collpase -->
-                    <a href="#informacion" role="button" class="btn btn-success" data-bs-toggle="collapse" aria-expanded="false" aria-controls="informacion"> 
+                    <a href="#informacion" role="button" class="btn btn-success" data-bs-toggle="collapse"
+                        aria-expanded="false" aria-controls="informacion">
                         Mostrar
                         Info</a>
 
@@ -163,6 +164,25 @@
                     </div>
 
 
+                    <!-- Barra de Progreso -->
+                    <div class="progress mt-5">
+                        <div id="barra-progreso" class="progress-bar bg-success" role="progressbar">
+                            <!-- 50% -->
+                        </div>
+                    </div>
+                    <script>
+                        let contador = 0;
+                        setInterval(function () {
+                            // alert(contador)
+
+                            barra = document.querySelector("#barra-progreso")
+                            barra.style.width = contador + "%";
+                            barra.innerHTML = contador + "%"
+                            contador++;
+                            if (contador == 100)
+                                contador = 0
+                        }, 1000)
+                    </script>
 
 
                     <!-- Migas de pan, que es como la ruta de la cual desciende la pagina actual, para retroceder route path -->
@@ -282,10 +302,10 @@
 
 <script type="module">
     import { Toast } from 'bootstrap.esm.min.js'
-  
+
     Array.from(document.querySelectorAll('.toast'))
-      .forEach(toastNode => new Toast(toastNode))
-  </script>
+        .forEach(toastNode => new Toast(toastNode))
+</script>
 
 <!-- Manejo de tiempos al  Slider con imagenes -->
 
